@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}body{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  background-image:url(blacky.jpg.png) ;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  padding: 20px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.logo{
+  color: #f39c12;
+  font-family:fantasy;
+  font-size: 40px;
+  font-weight: 90px;
+}
+
+
+
+nav a {
+  margin: 0 15px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #f39c12;
+}
+
+.btn6 {
+  background: #f39c12;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+        .about-us {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 60px 40px;
+  background: #fff;
+}
+
+.about-images {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.about-images img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.subheading {
+  color: #f39c12;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 60px;
+  margin-top: -9px;
+  margin-left: 200px;
+  font-style: italic;
+  font-weight: 900;
+  text-shadow: 0px 3px 2px black ;
+  transform: translateY(30px);
+      animation: fadeinuo 2s ease forwards;
+     
+    
+      
+    }
+    
+@keyframes fadeinuo {
+  0%{
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+    text-shadow: 1px 2px 3px black;
+ 
+  }
+}
+
+
+.about-text h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #111;
+  transform: translateY(30px);
+      animation: fadeinuo 2s ease forwards;
+     
+    
+      
+    }
+    
+@keyframes fadeinuo {
+  0%{
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+    text-shadow: 1px 2px 3px black;
+ 
+  }
+}
+
+
+.about-text p {
+  margin-bottom: 15px;
+  color: #444;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.about-stats {
+  display: flex;
+  gap: 40px;
+  margin: 20px 0;
+}
+
+.stat h3 {
+  font-size: 36px;
+  color: #f39c12;
+  margin-bottom: 5px;
+}
+
+.stat p {
+  font-size: 14px;
+  color: #333;
+}
+
+.btn {
+  display: inline-block;
+  background: #f39c12;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 10px;
+  box-shadow: 1px 2px 3px black;
+  margin-top: -49px;
+  margin-left: 200px;
+  
+
+}
+.img1{
+    height:100% ;
+}
+img{
+    margin-top: -30px;
+    
+}
+.img2{
+    height: 90%;
+    margin-top:10px ;
+}
+.next{
+  color:white;
+  background-color: orange;
+ margin-left:200px ;
+ width: 60px;
+ height: 34px;
+ border: none;
+ box-shadow: 1px 2px 3px black;
+ 
+}
+.next a{
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+}
+.hero {
+    position: relative;
+    background: url('pratha.jpg') center/cover no-repeat;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px 40px;
+    border-radius: 8px;
+    text-align: center;
+    animation: fadeDown 1s ease-out;
+}
+
+.overlay h1 {
+    font-size: 45px;
+    text-shadow: 1px 2px 1px coral;
+   
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    font-size: 1rem;
+    color: white;
+}
+
+
+.wave {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 70px;
+}
+
+
+.services {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.services h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    margin-top: -20px;
+    font-style: italic;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px darkred;
+    color: #222;
+    animation: fadeUp 5s ease-out;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 40px;
+    margin-top: 5px;
+    font-size: 1rem;
+    animation: fadeUp 4s ease-out;
+}
+
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 190px;
+    flex-wrap: wrap;
+    
+    
+}
+
+</style>
+
+    
+</head>
+<body style="background-color: orange;">
+
+    <header>
+    <div class="logo">🍴 Restorant</div>
+    <nav>
+      <a href="food.html">Home</a>
+      <a href="food2.html">About</a>
+      <a href="services.html">Service</a>
+      <a href="menu.html">Menu</a>
+      <a href="chef.html">Pages</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a class="btn6" href="book.html">Book a Table</a>
+  </header>
+  
+  <header class="hero">
+        <div class="overlay">
+            <h1>About Us</h1>
+            <p>Home /about us</p>
+        </div>
+       
+        <div class="wave">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+                <path d="M0,50 C150,150 350,0 500,50 L500,150 L0,150 Z" style="stroke: none; fill: white;"></path>
+            </svg>
+        </div>
+    </header>
+  
+
+    <section class="about-us">
+  <div class="about-images">
+    <img  src="fd.jpg" alt="Restaurant Interior " class="img1">
+    <img src="choco.jpg" alt="Restaurant Interior" class="img2">
+    <img src="piza.jpg" alt="Serving Food">
+    <img src="salad.jpg" alt="Food Display" >
+  </div>
+
+  <div class="about-text">
+    <h1 class="subheading">About Us..!</h1>
+    <h2>Welcome to 🍴 Restoran</h2>
+    <p>its resturnt have a unique features including cuisine good food</p>
+    <p>A cozy and inviting establishment, The Golden Spoon offers a warm atmosphere with soft lighting and comfortable seating. The menu features a delightful array of [Type of Cuisine] dishes, prepared with fresh, locally-sourced ingredients. From [Appetizer] to [Main Course] and decadent desserts, every dish is crafted with care and attention to detail.<br> Whether you're looking for a romantic dinner for two or a gathering with friends, The Golden Spoon provides</p>
+
+    <div class="about-stats">
+      <div class="stat">
+        <h3>&uarr;8</h3>
+        <p><span>Years of</span><br> <strong>EXPERIENCE</strong></p>
+      </div>
+      <div class="stat">
+        <h3>&uarr; 28</h3>
+        <p><span>Popular</span><br> <strong>MASTER CHEFS</strong></p>
+      </div>
+    </div>
+
+    <a href="#" class="btn">READ MORE</a>
+    <button class="next"><a href=services.html>&rarr;</a></button>
+  </div>
+</section>
+<footer style="background-color: #0f172b; color: white; padding: 50px 20px;">
+  <div style="display: flex; flex-wrap: wrap; justify-content: space-between; max-width: 1200px; margin: auto;">
+    
+   
+    <div style="flex: 1 1 200px; margin: 10px;">
+      <h3 style="color: #f4a51c;">Company <span style="color: #f4a51c;">—</span></h3><br>   
+      <ul style="list-style: none; padding: 0;">
+        <li><a href="#" style="color: white; text-decoration: none;">› About Us</a></li><br>
+        <li><a href="#" style="color: white; text-decoration: none;">› Contact Us</a></li><br>
+        <li><a href="#" style="color: white; text-decoration: none;">› Reservation</a></li><br>
+        <li><a href="#" style="color: white; text-decoration: none;">› Privacy Policy</a></li><br>
+        <li><a href="#" style="color: white; text-decoration: none;">› Terms & Condition</a></li><br>
+      </ul>
+    </div>
+
+   
+    <div style="flex: 1 1 200px; margin: 10px;">
+      <h3 style="color: #f4a51c;">Contact <span style="color: #f4a51c;">—</span></h3><br>
+      <p>123 Street, New York, USA</p><br>
+      <p>+012 999 869766</p><br>
+      <p>info@example.com</p>
+      <div style="margin-top: 10px;">
+        <a href="#" style="color: white; margin-right: 10px;">🌐</a>
+        <a href="#" style="color: white; margin-right: 10px;">📘</a>
+        <a href="#" style="color: white; margin-right: 10px;">▶️</a>
+        <a href="#" style="color: white;">🔗</a>
+      </div>
+    </div>
+
+    
+    <div style="flex: 1 1 200px; margin: 10px;">
+      <h3 style="color: #f4a51c;">Opening <span style="color: #f4a51c;">—</span></h3><br>
+      <p>Monday - Saturday<br><br>09AM - 09PM</p>
+      <p>Sunday<br><br>10AM - 08PM</p>
+    </div>
+
+    
+    <div style="flex: 1 1 250px; margin: 10px;">
+      <h3 style="color: #f4a51c;">Newsletter <span style="color: #f4a51c;">—</span></h3><br>    
+      <p>take news  let reads some information!!</p><br>    
+      <form style="display: flex;">
+        <input type="email" placeholder="Your email" style="padding: 10px; border: none; border-radius: 5px 0 0 5px; outline: none;">
+        <button style="background-color: #f4a51c; border: none; color: white; padding: 10px 15px; border-radius: 0 5px 5px 0; cursor: pointer;">SIGNUP</button>
+      </form>
+    </div>
+
+  </div>
+
+ 
+  <div style="text-align: center; margin-top: 40px; border-top: 1px solid #222; padding-top: 20px;">
+    <p style="color: white;">© Your Site Name, All Right Reserved. Designed By ANJALI SAINI</p>
+    <div style="margin-top: 10px;">
+      <a href="#" style="color: white; margin: 0 10px;">Home</a>
+      <a href="#" style="color: white; margin: 0 10px;">Cookies</a>
+      <a href="#" style="color: white; margin: 0 10px;">Help</a>
+      <a href="#" style="color: white; margin: 0 10px;">FAQs</a>
+    </div>
+    <div style="position: fixed; bottom: 20px; right: 20px;">
+      <a href="#" style="background-color: #f4a51c; padding: 10px; border-radius: 5px; color: white; text-decoration: none;">↑</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
+
+
