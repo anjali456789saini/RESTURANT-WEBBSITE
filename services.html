@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="servicescss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body >
+
+    <header class="yy">
+    <div class="logo">🍴 Restorant</div>
+    <nav>
+      <a href="food.html">Home</a>
+      <a href="food2.html">About</a>
+      <a href="services.html">Service</a>
+      <a href="menu.html">Menu</a>
+      <a href="chef.html">Pages</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a class="btn6" href="book.html">Book a Table</a>
+  </header>
+  
+  <header class="hero">
+        <div class="overlay">
+            <h1>services</h1>
+            <p>Home /services</p>
+        </div>
+       
+        <div class="wave">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+                <path d="M0,50 C150,150 350,0 500,50 L500,150 L0,150 Z" style="stroke: none; fill: white;"></path>
+            </svg>
+        </div>
+    </header>
+
+
+     <header>
+    <div class="container topbar">
+      <div class="search">
+        <input id="search" placeholder="Search services, dishes, combos…" />
+      </div>
+      <select id="filter" class="select">
+        <option value="all">All</option>
+        <option value="veg">Veg</option>
+        <option value="nonveg">Non-Veg</option>
+        <option value="dinein">Dine-in</option>
+        <option value="delivery">Delivery</option>
+        <option value="catering">Catering</option>
+      </select>
+      <select id="sort" class="select">
+        <option value="popular">Popular</option>
+        <option value="price_asc">Price: Low to High</option>
+        <option value="price_desc">Price: High to Low</option>
+        <option value="rating_desc">Rating</option>
+      </select>
+    </div>
+  </header><br><br>
+
+  <div class="container">
+    <div class="badges">
+      <span class="badge">🔥 Today’s Deals</span>
+      <span class="badge">🚚 Free Delivery over ₹499</span>
+      <span class="badge">🧼 Hygiene Certified</span>
+      <span class="badge">⏱️ 30-45 min Delivery</span>
+    </div><br><br>
+
+    <div id="grid" class="grid"></div>
+  </div>
+
+  <div class="cartbar">
+    <div class="cartwrap">
+      <div class="subtotal">🛒 <span id="count">0</span> items • ₹<span id="total">0</span></div>
+      <div>
+        <button class="btn">Apply Coupon</button>
+        <button class="btn">View Cart</button>
+        <button class="btn add">Checkout →</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast">Added to cart</div>
+
+
+  <footer style="background-color: #0f172b; color: white; padding: 50px 20px;">
+  <div style="display: flex; flex-wrap: wrap; justify-content: space-between; max-width: 1200px; margin: auto;">
+    
+    
+    <div style="flex: 1 1 200px; margin: 10px;">
+      <h3 style="color: #f4a51c;">Company <span style="color: #f4a51c;">—</span></h3><br>   
+      <ul style="list-style: none; padding: 0;">
+        <li><a href="#" style="color: white; text-decoration: none;">› About Us</a></li><br>
+        <li><a href="#" style="color: white; text-decoration: none;">› Contact Us</a></li><br>
+        <li><a href="#" style="color: white; text-decoration: none;">› Reservation</a></li><br>
+        <li><a href="#" style="color: white; text-decoration: none;">› Privacy Policy</a></li><br>
+        <li><a href="#" style="color: white; text-decoration: none;">› Terms & Condition</a></li><br>
+      </ul>
+    </div>
+
+   
+    <div style="flex: 1 1 200px; margin: 10px;">
+      <h3 style="color: #f4a51c;">Contact <span style="color: #f4a51c;">—</span></h3><br>
+      <p>123 Street, New York, USA</p><br>
+      <p>+012 999 869766</p><br>
+      <p>info@example.com</p>
+      <div style="margin-top: 10px;">
+        <a href="#" style="color: white; margin-right: 10px;">🌐</a>
+        <a href="#" style="color: white; margin-right: 10px;">📘</a>
+        <a href="#" style="color: white; margin-right: 10px;">▶️</a>
+        <a href="#" style="color: white;">🔗</a>
+      </div>
+    </div>
+
+   
+    <div style="flex: 1 1 200px; margin: 10px;">
+      <h3 style="color: #f4a51c;">Opening <span style="color: #f4a51c;">—</span></h3><br>
+      <p>Monday - Saturday<br><br>09AM - 09PM</p>
+      <p>Sunday<br><br>10AM - 08PM</p>
+    </div>
+
+    
+    <div style="flex: 1 1 250px; margin: 10px;">
+      <h3 style="color: #f4a51c;">Newsletter <span style="color: #f4a51c;">—</span></h3><br>    
+      <p>take news  let reads some information!!</p><br>    
+      <form style="display: flex;">
+        <input type="email" placeholder="Your email" style="padding: 10px; border: none; border-radius: 5px 0 0 5px; outline: none;">
+        <button style="background-color: #f4a51c; border: none; color: white; padding: 10px 15px; border-radius: 0 5px 5px 0; cursor: pointer;">SIGNUP</button>
+      </form>
+    </div>
+
+  </div>
+
+  <div style="text-align: center; margin-top: 40px; border-top: 1px solid #222; padding-top: 20px;">
+    <p style="color: white;">© Your Site Name, All Right Reserved. Designed By Anjali saini</p>
+    <div style="margin-top: 10px;">
+      <a href="#" style="color: white; margin: 0 10px;">Home</a>
+      <a href="#" style="color: white; margin: 0 10px;">Cookies</a>
+      <a href="#" style="color: white; margin: 0 10px;">Help</a>
+      <a href="#" style="color: white; margin: 0 10px;">FAQs</a>
+    </div>
+    <div style="position: fixed; bottom: 20px; right: 20px;">
+      <a href="#" style="background-color: #f4a51c; padding: 10px; border-radius: 5px; color: white; text-decoration: none;">↑</a>
+    </div>
+  </div>
+</footer>
+<script>
+
+    const ITEMS = [
+  {id:1, title:"Family Combo (Veg)", cat:["veg","delivery"], type:"delivery", price:699, mrp:899, rating:4.6, popular:1, img:"fast.jpg"},
+  {id:2, title:"Tandoori Non-Veg Platter", cat:["nonveg","dinein"], type:"dinein", price:899, mrp:999, rating:4.8, popular:2, img:"non2.jpg"},
+  {id:3, title:"Office Lunch Catering (50 pax)", cat:["catering","veg"], type:"catering", price:12999, mrp:14999, rating:4.7, popular:3, img:"party.jpg"},
+  {id:4, title:"Chef’s Table Experience", cat:["dinein"], type:"dinein", price:1999, mrp:2499, rating:4.9, popular: 4, img:"salad.jpg"},
+  {id:5, title:"Couple Candle-Light Setup", cat:["dinein","veg"], type:"dinein", price:1499, mrp:1799, rating:4.5, popular:6, img:"quick.jpg"},
+  {id:6, title:"Birthday Party Catering (25 pax)", cat:["catering","veg"], type:"catering", price:6999, mrp:7999, rating:4.6, popular:5, img:"nood.jpg"},
+  {id:7, title:"Express Lunch (Non-Veg)", cat:["nonveg","delivery"], type:"delivery", price:349, mrp:399, rating:4.2, popular:8, img:"nnn.jpg"},
+  {id:8, title:"Healthy Salad Bowls", cat:["veg","delivery"], type:"delivery", price:299, mrp:349, rating:4.4, popular:7, img:"https://images.unsplash.com/photo-1540189549336-e6e99c3679fe"}
+];
+
+const state = { q:"", filter:"all", sort:"popular", cart:{}, wishlist:new Set() };
+const $grid=document.getElementById('grid'), $count=document.getElementById('count'), $total=document.getElementById('total'), $toast=document.getElementById('toast');
+const money=n=>n.toLocaleString('en-IN');
+
+function render(){
+  const q=state.q.toLowerCase();
+  let list=ITEMS.filter(it=>it.title.toLowerCase().includes(q) && (state.filter==='all'||it.cat.includes(state.filter)));
+  switch(state.sort){
+    case 'price_asc': list.sort((a,b)=>a.price-b.price); break;
+    case 'price_desc': list.sort((a,b)=>b.price-a.price); break;
+    case 'rating_desc': list.sort((a,b)=>b.rating-a.rating); break;
+    default: list.sort((a,b)=>a.popular-b.popular);
+  }
+  $grid.innerHTML=list.map(cardHTML).join('');
+  attachCardEvents();
+  let items=0,sum=0; for(const id in state.cart){const it=ITEMS.find(i=>i.id===+id); const qty=state.cart[id]; if(it){items+=qty; sum+=qty*it.price;}}
+  $count.textContent=items; $total.textContent=money(sum);
+}
+function cardHTML(it){
+  const inWish=state.wishlist.has(it.id);
+  const off=Math.max(0,Math.round((1-it.price/it.mrp)*100));
+  const best=it.popular<=3;
+  return `<div class="card" data-id="${it.id}">
+      <div class="img"><img alt="${it.title}" loading="lazy" src="${it.img}?w=800&q=60"/></div>
+      <div class="flag ${best?'best':''}">${best?'Best Seller':'Save '+off+'%'}</div>
+      <div class="content">
+        <div class="title">${it.title}</div>
+        <div class="desc">${it.type==='catering'?'Bulk/Party Booking':'Quick service in 30-45 min'}</div>
+        <div class="row">
+          <div><span class="price">₹${money(it.price)}</span><span class="strike">₹${money(it.mrp)}</span></div>
+          <div class="rating">⭐ ${it.rating.toFixed(1)}</div>
+        </div>
+        <div class="action">
+          <button class="btn add" data-add="${it.id}">Add</button>
+          <div class="qty" hidden>
+            <button class="dec">−</button><span class="num">1</span><button class="inc">+</button>
+          </div>
+          <button class="btn wish ${inWish?'active':''}" data-wish="${it.id}">❤</button>
+        </div>
+      </div>
+    </div>`;
+}
+function attachCardEvents(){
+  document.querySelectorAll('[data-add]').forEach(btn=>{
+    btn.onclick=()=>{
+      const id=+btn.dataset.add;
+      state.cart[id]=(state.cart[id]||0)+1;
+      const card=btn.closest('.card'); card.querySelector('.qty').hidden=false; card.querySelector('.num').textContent=state.cart[id];
+      btn.textContent='Added'; showToast('Added to cart'); render();
+    };
+  });
+  document.querySelectorAll('.inc').forEach(b=>b.onclick=e=>{
+    const id=+e.target.closest('.card').dataset.id; state.cart[id]=(state.cart[id]||1)+1; e.target.closest('.qty').querySelector('.num').textContent=state.cart[id]; render();
+  });
+  document.querySelectorAll('.dec').forEach(b=>b.onclick=e=>{
+    const id=+e.target.closest('.card').dataset.id; const cur=(state.cart[id]||1)-1;
+    if(cur<=0){delete state.cart[id]; const card=e.target.closest('.card'); card.querySelector('.qty').hidden=true; card.querySelector('[data-add]').textContent='Add';}
+    else{state.cart[id]=cur; e.target.closest('.qty').querySelector('.num').textContent=cur;} render();
+  });
+  document.querySelectorAll('[data-wish]').forEach(w=>w.onclick=()=>{const id=+w.dataset.wish; if(state.wishlist.has(id))state.wishlist.delete(id); else state.wishlist.add(id); w.classList.toggle('active');});
+}
+function showToast(msg){$toast.textContent=msg; $toast.classList.add('show'); setTimeout(()=> $toast.classList.remove('show'),1200);}
+document.getElementById('search').oninput=e=>{state.q=e.target.value;render();}
+document.getElementById('filter').onchange=e=>{state.filter=e.target.value;render();}
+document.getElementById('sort').onchange=e=>{state.sort=e.target.value;render();}
+render();
+</script>
+
+  
+
+</body>
+</html>
+    
